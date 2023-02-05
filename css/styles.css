@@ -17,7 +17,6 @@ html {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 p,
@@ -67,10 +66,18 @@ body {
 
 /* Header */
 .header {
+  border-bottom-width: 1px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav {
+  display: flex;
+  margin-right: auto;
 }
 
 .header-nav-logo {
@@ -92,6 +99,12 @@ body {
 }
 
 .header-nav-list {
+  display: flex;
+  margin-left: 76px;
+}
+
+.header-nav-list .header-nav-item + .header-nav-item {
+  margin-left: 40px;
 }
 
 .header-nav-item {
@@ -115,7 +128,13 @@ body {
 .header-address {
 }
 .header-address-list {
+  display: flex;
 }
+
+.header-address-list .header-address-item + .header-address-item {
+  margin-left: 40px;
+}
+
 .header-address-item {
 }
 
@@ -207,7 +226,7 @@ body {
 
 .hero-button {
   margin: 0 auto;
-   font-family: "Roboto";
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -233,8 +252,12 @@ body {
 }
 
 .feature-list {
+  display: flex;
+  margin: 0px -12px;
 }
 .feature-item {
+  width: 264px;
+  margin: 0px 12px;
 }
 .feature-title {
   margin-bottom: 8px;
@@ -268,9 +291,12 @@ body {
   color: #2e2f42;
 }
 .doing-list {
+  display: flex;
+  margin: 0px =12px;
 }
 
 .doing-item {
+  margin: 0px 12px;
 }
 
 /* Section 4 */
@@ -291,9 +317,12 @@ body {
 }
 
 .team-list {
+  display: flex;
+  margin: 0px -12px;
 }
 
 .team-item {
+  margin: 0px 12px;
 }
 
 .team-subtitle {
@@ -326,6 +355,8 @@ body {
 }
 
 .components-btn-list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 72px;
 }
 
@@ -333,6 +364,7 @@ body {
 }
 
 .components-btn-button {
+  margin-right: 24px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -345,6 +377,10 @@ body {
   cursor: pointer;
 }
 
+.components-btn-button :first-child {
+  margin-right: 0;
+}
+
 .components-btn-button:hover {
   color: #ffffff;
 }
@@ -354,8 +390,13 @@ body {
 }
 
 .components-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -24px -12px;
 }
 .components-cards-item {
+  border-bottom-width: 1px;
+  margin: 24px 12px;
 }
 
 .components-cards-title {
