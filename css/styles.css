@@ -231,17 +231,20 @@ body {
   width: 169px;
   height: 56px;
   border-radius: 4px;
+
   margin: 0 auto;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+  background-color: #4d5ae5;
   cursor: pointer;
 }
+/* 
+border: 1px solid #4D5AE5;*/
 
 .hero-button:hover {
   color: #ffffff;
@@ -298,7 +301,7 @@ body {
 }
 .doing-list {
   display: flex;
-  margin: 0px =12px;
+  margin: 0px -12px;
 }
 
 .doing-item {
@@ -337,7 +340,6 @@ body {
 }
 
 .team-subtitle {
-  margin-top: 32px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -369,26 +371,24 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .components-btn-item {
-  
+  margin-right: 24px;
 }
+
+/* padding-left: 24px;
+  padding-right: 24px; */
 
 .components-btn-button {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   height: 48px;
-  margin-right: 24px;
+
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -396,7 +396,27 @@ body {
   cursor: pointer;
 }
 
-.components-btn-button :first-child {
+.all-btn {
+  width: 69px;
+}
+
+.website-btn {
+  width: 116px;
+}
+
+.app-btn {
+  width: 78px;
+}
+
+.design-btn {
+  width: 101px;
+}
+
+.marketing-btn {
+  width: 126px;
+}
+
+.components-btn-item :first-child {
   margin-right: 0;
 }
 
@@ -419,12 +439,49 @@ body {
 }
 
 .components-cards-ctr {
+  padding-left: 16px;
+
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
+.cards-ctr-one {
+  padding-right: 54px;
+}
+
+.cards-ctr-two {
+  padding-right: 172px;
+}
+
+.cards-ctr-three {
+  padding-right: 209px;
+}
+
+.cards-ctr-four {
+  padding-right: 231px;
+}
+
+.cards-ctr-five {
+  padding-right: 163px;
+}
+
+.cards-ctr-six {
+  padding-right: 202px;
+}
+
+.cards-ctr-seven {
+  padding-right: 95px;
+}
+
+.cards-ctr-eight {
+  padding-right: 220px;
+}
+
+.cards-ctr-nine {
+  padding-right: 225px;
+}
+
 .components-cards-title {
-  margin-top: 32px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
